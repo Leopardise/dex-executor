@@ -1,0 +1,36 @@
+{
+    "name": "dex-executor",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "ts-node-dev --respawn ./src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "test": "jest --runInBand"
+    },
+    "dependencies": {
+        "@fastify/websocket": "^7.0.0",
+        "@meteora-ag/dynamic-amm-sdk": "^1.4.1",
+        "@raydium-io/raydium-sdk-v2": "0.2.30-alpha",
+        "@solana/spl-token": "^0.4.0",
+        "@solana/web3.js": "^1.95.0",
+        "@types/pg": "^8.15.6",
+        "@types/ws": "^8.18.1",
+        "axios": "^1.7.0",
+        "bs58": "^5.0.0",
+        "bullmq": "^5.0.0",
+        "dotenv": "^16.4.0",
+        "fastify": "^5.0.0",
+        "ioredis": "^5.3.0",
+        "pg": "^8.16.3",
+        "uuid": "^9.0.1",
+        "ws": "^8.18.3"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@types/node": "^22.0.0",
+        "ts-jest": "^29.2.3",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.6.0"
+    }
+}

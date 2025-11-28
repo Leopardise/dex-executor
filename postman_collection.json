@@ -1,0 +1,30 @@
+{
+    "info": {
+      "name": "DEX Executor",
+      "_postman_id": "11111111-2222-3333-4444-555555555555",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Create Market Order",
+        "request": {
+          "method": "POST",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"side\": \"buy\",\n  \"amount\": \"0.01\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/api/orders/execute",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "orders", "execute"]
+          }
+        }
+      }
+    ]
+  }
+  
